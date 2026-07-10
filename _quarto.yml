@@ -4,8 +4,10 @@ project:
 
 website:
   title: "Shared Teaching Materials"
-  navbar:
-    left:
+  sidebar:
+    style: docked
+    search: true
+    contents:
       - href: index.qmd
         text: Materials
       - href: usage.qmd
@@ -18,6 +20,7 @@ format:
     theme: cosmo
     toc: true
     code-copy: true
+    css: assets/styles.css
 
 execute:
   freeze: auto

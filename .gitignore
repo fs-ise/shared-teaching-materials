@@ -1,2 +1,6 @@
 /.quarto/
+_freeze/
+_site/
 **/*.quarto_ipynb
+analytics/rise-of-analytics.quarto_ipynb_1
+index.quarto_ipynb_1

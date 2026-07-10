@@ -8,8 +8,15 @@ title: "Analytics materials"
 
 A reusable slide deck fragment explaining why modern analytics is successful: more data, more computing power, new algorithms, and new analytics processes.
 
-- [Preview the deck](rise-of-analytics.qmd)
+- [Open the deck in a dedicated page](rise-of-analytics.qmd)
 - Source fragment: [`_rise_of_analytics.qmd`](_rise_of_analytics.qmd)
+
+
+#### Inline deck preview
+
+```{=html}
+<iframe class="inline-slide-deck" src="rise-of-analytics.html" title="Rise of Analytics slide deck preview" loading="lazy" allowfullscreen></iframe>
+```
 
 Include shortcut:
 

@@ -1,0 +1,7 @@
+.inline-slide-deck {
+  width: 100%;
+  min-height: 70vh;
+  border: 1px solid var(--bs-border-color, #dee2e6);
+  border-radius: 0.5rem;
+  background: #fff;
+}
