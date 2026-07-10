@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Shared Teaching Materials"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Materials
+      - href: usage.qmd
+        text: Usage
+      - href: analytics/index.qmd
+        text: Analytics
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-copy: true
+
+execute:
+  freeze: auto
+
+shared-materials: ".."

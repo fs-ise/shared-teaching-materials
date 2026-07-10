@@ -1,0 +1,11 @@
+---
+title: "Rise of Analytics"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+---
+
+{{< include _rise_of_analytics.qmd >}}

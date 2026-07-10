@@ -1,0 +1,20 @@
+---
+title: "Analytics materials"
+---
+
+## Slide decks
+
+### Rise of Analytics
+
+A reusable slide deck fragment explaining why modern analytics is successful: more data, more computing power, new algorithms, and new analytics processes.
+
+- [Preview the deck](rise-of-analytics.qmd)
+- Source fragment: [`_rise_of_analytics.qmd`](_rise_of_analytics.qmd)
+
+Include shortcut:
+
+```Markdown
+{{{< include ../shared-teaching-materials/analytics/_rise_of_analytics.qmd >}}}
+```
+
+If the including course slide deck is in a subdirectory, adjust the leading `../` segments accordingly.

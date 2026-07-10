@@ -1,0 +1,31 @@
+---
+title: "Shared Teaching Materials"
+---
+
+This repository contains reusable teaching materials that can be included from course repositories with Quarto.
+
+## Material areas
+
+| Area | Contents | Include shortcut |
+|---|---|---|
+| [Analytics](analytics/) | Shared analytics slide decks and teaching fragments. | `{{< include ../shared-teaching-materials/analytics/_rise_of_analytics.qmd >}}` |
+
+## Available slide decks
+
+### Analytics
+
+- [Rise of Analytics](analytics/rise-of-analytics.qmd): reusable slide deck fragment about why modern analytics is successful.
+
+Copy this include into a course slide deck where the shared material should appear:
+
+```markdown
+{{< include ../shared-teaching-materials/analytics/_rise_of_analytics.qmd >}}
+```
+
+Adjust the relative path when the including `.qmd` file is not rendered from the course repository root.
+
+## Repository purpose
+
+Instead of copying slides and other materials across courses, include reusable content from this `shared-teaching-materials` repository.
+
+Move materials to this repository when you would otherwise copy and duplicate them across courses. It is not necessary to move all teaching materials here; add material when there is a high chance that it will be reused in other courses.
