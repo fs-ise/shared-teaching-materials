@@ -4,16 +4,19 @@ title: "Using shared materials"
 
 ## Add this repository as a Git submodule
 
-Add the repository as a submodule at the project root:
+Add the repository as a submodule at the project root using SSH:
 
 ```bash
-git submodule add https://github.com/fs-ise/shared-teaching-materials.git shared-teaching-materials
+git submodule add \
+  git@github.com:fs-ise/shared-teaching-materials.git \
+  shared-teaching-materials
 ```
 
-Clone a teaching repository including its submodules with:
+Clone a teaching repository, including its submodules, using its SSH URL:
 
 ```bash
-git clone --recurse-submodules <repository-url>
+git clone --recurse-submodules \
+  git@github.com:<teaching-repository>.git
 ```
 
 For an existing clone, initialize and update the submodule with:
@@ -84,7 +87,18 @@ When rendering from a teaching repository that contains the submodule, define:
 shared-materials: /shared-teaching-materials
 ```
 
-The variable can be defined in `_variables.yml` or project metadata in the respective Quarto project. This allows the same content to be rendered both directly within `shared-teaching-materials` and when included through the submodule in another teaching repository.
+The variable can be defined in `_variables.yml` or the project metadata of the respective Quarto project.
+This allows the same content to be rendered both directly within `shared-teaching-materials` and when included through the submodule in another teaching repository.
+
+## Shared references
+
+To use shared bibliographies, add `references.bib` to `_quarto.yml`:
+
+```yaml
+bibliography:
+  - references.bib
+  - shared-teaching-materials/references.bib
+```
 
 ## Move materials into shared-teaching-materials
 
